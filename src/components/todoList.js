@@ -10,7 +10,7 @@ const TodoList = () => {
     const fetchTodos = useStoreActions(Actions => Actions.fetchTodos)
     useEffect(() => {
       fetchTodos();
-    },[])
+    },[fetchTodos])
     return (
       <div>
         {
