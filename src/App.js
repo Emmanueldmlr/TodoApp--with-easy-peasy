@@ -9,7 +9,7 @@ function App() {
   const store = createStore(model)
   return (
     <StoreProvider store={store}>
-      <div className='col-6 offset-3'>
+      <div className='col-md-6  offset-md-3'>
         <Header />
         <TodoList />
       </div>
